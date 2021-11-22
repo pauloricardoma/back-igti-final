@@ -1,4 +1,4 @@
-create sequence pedido_seq start 1 increment 1;
+create sequence pedido_seq start 100 increment 1;
 create table item_pedido (id_pedido int4 not null, id_produto int4, quantidade int4);
 create table pedido (id_pedido int4 not null, data_hora timestamp, situacao varchar(255), primary key (id_pedido));
 create table produto (id_produto int4 not null, categoria varchar(255), descricao varchar(255), preco float8, primary key (id_produto));
